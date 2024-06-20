@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include <uiinistd.h>
 /**
  * main - Entry point
