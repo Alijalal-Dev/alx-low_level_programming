@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 /**
@@ -17,22 +16,22 @@ int main(void)
 
 	for (i = 2; i < 98; i++)
 	{
-		if (b > 10000000000)
+		if (b > 100000000)
 		{
-			a_half1 = a / 10000000000;
-			a_half2 = a % 10000000000;
-			b_half1 = b / 10000000000;
-			b_half2 = b % 10000000000;
+			a_half1 = a / 100000000;
+			a_half2 = a % 100000000;
+			b_half1 = b / 100000000;
+			b_half2 = b % 100000000;
 			half1 = a_half1 + b_half1;
 			half2 = a_half2 + b_half2;
-			if (half2 > 10000000000)
+			if (half2 > 100000000)
 			{
 				half1 += 1;
-				half2 %= 10000000000;
+				half2 %= 100000000;
 			}
 			printf(", %lu%010lu", half1, half2);
 			a = b;
-			b = half1 * 10000000000 + half2;
+			b = half1 * 100000000 + half2;
 		}
 		else
 		{
