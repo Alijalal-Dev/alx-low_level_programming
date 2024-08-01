@@ -1,12 +1,9 @@
-vi 4-free_list.c
-
 #include "lists.h"
 
 /**
  * free_list - frees a linked list
  * @head: pointer the node to be freed
  */
-
 void free_list(list_t *head)
 {
 	list_t *node, *next_node;
